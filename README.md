@@ -1,78 +1,109 @@
-# React + TypeScript + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built to showcase my projects, technical skills, and experience as a Frontend Developer.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio introduces who I am, highlights my technical skills, showcases selected projects, and provides ways to get in touch with me.
 
-## React Compiler
+## Built With
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Lucide React
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Features
 
-## Expanding the ESLint configuration
+- Home section with an animated typing introduction
+- About section with technical skills
+- Projects showcase using reusable components
+- Contact section with a message form
+- Responsive layout for different screen sizes
+- Reusable and organized component structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Project Structure
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```text
+portfolio/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── assets/
+│   │   ├── financial-photo.png
+│   │   ├── kebele-photo.png
+│   │   └── productList-photo.png
+│   ├── components/
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── MainLayout.tsx
+│   │   └── ProjectCard.tsx
+│   ├── data/
+│   │   └── projects.ts
+│   ├── pages/
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Home.tsx
+│   │   └── Projects.tsx
+│   ├── types/
+│   │   └── project.ts
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+├── eslint.config.js
+├── index.html
+├── package.json
+├── pnpm-lock.yaml
+├── README.md
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js
+- pnpm
 
-```
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/jzzmiiinn/portfolio.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd portfolio
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   pnpm dev
+   ```
+
+## Author
+
+**Yasmin Ali Aime**
+
+- GitHub: [@jzzmiiinn](https://github.com/jzzmiiinn)
+- LinkedIn: [Yasmin Ali](https://www.linkedin.com/in/yasmin-ali-2b0a1b1b6/)
+
+---
+
+Built with React and a passion for creating user-friendly web experiences.
