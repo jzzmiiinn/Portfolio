@@ -76,13 +76,13 @@ portfolio/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/jzzmiiinn/portfolio.git
+   git clone https://github.com/jzzmiiinn/Portfolio.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd portfolio
+   cd Portfolio
    ```
 
 3. Install dependencies:
